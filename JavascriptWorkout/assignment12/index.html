@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment12</title>
+</head>
+<body>
+    <script>
+        function palindrome(str){
+    str = str.toLowerCase().replace(/[0-9]/g, "");
+   let revstr=str.split('').reverse().join('') ;
+   if(revstr===str){
+    console.log("enterd string a palindrome");
+    return
+   }
+console.log('enterd string not a palindrome');
+}
+ palindrome(prompt());
+    </script>
+</body>
+</html>

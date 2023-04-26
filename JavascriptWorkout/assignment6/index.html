@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment6</title>
+</head>
+<body>
+    <script>
+        let arr=[];
+        let n=prompt("Enter the number of elements");
+        for(let i=0;i<n;i++){
+            arr[i]=parseInt(prompt());
+        }
+        abc=(a,b)=>{
+        return a-b;
+    }
+    function sorting(){
+        arr.sort(abc);
+        document.write("second largest number is "+arr[n-2]);
+
+    }
+     sorting();
+    </script>
+</body>
+</html>

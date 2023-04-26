@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment17</title>
+</head>
+<body>
+    <script>
+        function sumEvenAndOdd(n){
+    let odd=[];
+    let even=[];
+    for(i=1;i<n;i++){
+        if(i%2===0){
+            even.push(i);
+        }
+      else  odd.push(i);
+    }
+    console.log("sum of odd numers is ",odd.reduce((total,item)=>total+item));
+    console.log("sum of even numers is ",even.reduce((total,item)=>total+item));
+ }
+  sumEvenAndOdd(parseInt(prompt()));
+    </script>
+</body>
+</html>

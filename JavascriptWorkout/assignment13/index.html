@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment13</title>
+</head>
+
+<body>
+    <script>
+        function isArmstrongNumber(num) {
+            let str = num.toString();
+            let len = str.length;
+            let sum = 0;
+            for (i = 0; i < len; i++) {
+                let digit = parseInt(str[i]);
+                sum += digit ** len;
+            }
+            if (sum === num) {
+                console.log("given number is a Armstrong number");
+                return;
+            }
+            console.log("given number is not a Armstrong number");
+        }
+        isArmstrongNumber(parseInt(prompt()));
+    </script>
+</body>
+
+</html>
