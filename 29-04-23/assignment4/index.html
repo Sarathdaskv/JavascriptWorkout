@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment4</title>
+</head>
+<body>
+    <script>
+        function camelCase(str){
+            let newstr=str.split(" ");
+            for(let i=0;i<str.length;i++){
+                newstr[i]=newstr[i][0].toUpperCase()+newstr.splice(1);
+            }
+            console.log(newstr.join(''));
+        }
+        camelCase("hello world");
+    </script>
+    
+</body>
+</html>
